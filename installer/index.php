@@ -176,7 +176,10 @@ if(isset($uPOST['submit']) && $uPOST['submit']) {
                 <button type="submit" name="submit" value="submit">نصب ربات</button>
             </form>
         <footer>
-            <p>Mirzabot Installer , Made by ♥️ | <a href="https://github.com/mahdiMGF2/botmirzapanel">Github</a> | <a href="https://t.me/mirzapanel">Telegram</a> | &copy; <?php echo date('Y'); ?></p>
+            <p>Mirzabot Installer | Edited & Customized by <strong>ServereStan</strong> ❤️ | 
+            <a href="https://github.com/ExploitNet/botmirzapanel">Github</a> | 
+            <a href="https://t.me/ServereStanORG">Telegram</a> | 
+            &copy; <?php echo date('Y'); ?></p>
         </footer>
     </div>
 </body>
