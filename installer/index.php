@@ -34,7 +34,7 @@ if(isset($uPOST['submit']) && $uPOST['submit']) {
 
     $tgAdminId = $uPOST['admin_id'];
     $tgBotToken = $uPOST['tg_bot_token'];
-    $dbInfo['host'] = 'localhost';
+    $dbInfo['host'] = '127.0.0.1';
     $dbInfo['name'] = $uPOST['database_name'];
     $dbInfo['username'] = $uPOST['database_username'];
     $dbInfo['password'] = $uPOST['database_password'];
@@ -152,7 +152,7 @@ if(isset($uPOST['submit']) && $uPOST['submit']) {
                            placeholder="DATABASE USERNAME" value="<?php echo $uPOST['database_username'] ?? ''; ?>" required>
                 </div>
                 <div class="form-group">
-                    <label for="database_password">رمز عبور  دیتابیس :</label>
+                    <label for="database_password">رمز عبور  دیتابیس (حاوی حروف و عدد):</label>
                     <input type="text" id="database_password" name="database_password" 
                            placeholder="DATABASE PASSOWRD" value="<?php echo $uPOST['database_password'] ?? ''; ?>" required>
                 </div>
