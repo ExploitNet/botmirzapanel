@@ -6,7 +6,7 @@ channel => @mirzapanel
 $dbname = '{DATABASE_NAME}'; //  Name Database
 $usernamedb = '{DATABASE_USERNAME}'; // Username Database
 $passworddb = '{DATABASE_PASSOWRD}'; // Password Database
-$connect = mysqli_connect("localhost", $usernamedb, $passworddb, $dbname);
+$connect = mysqli_connect("127.0.0.1", $usernamedb, $passworddb, $dbname);
 if ($connect->connect_error) {
     die("The connection to the database failed:" . $connect->connect_error);
 }
@@ -24,7 +24,7 @@ $options = [
     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
     PDO::ATTR_EMULATE_PREPARES => false,
 ];
-$dsn = "mysql:host=localhost;dbname=$dbname;charset=utf8mb4";
+$dsn = "mysql:host=127.0.0.1;dbname=$dbname;charset=utf8mb4";
 try {
     $pdo = new PDO($dsn, $usernamedb, $passworddb, $options);
 } catch (\PDOException $e) {
