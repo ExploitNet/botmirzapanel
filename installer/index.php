@@ -34,7 +34,7 @@ if(isset($uPOST['submit']) && $uPOST['submit']) {
 
     $tgAdminId = $uPOST['admin_id'];
     $tgBotToken = $uPOST['tg_bot_token'];
-    $dbInfo['host'] = 'localhost';
+    $dbInfo['host'] = '127.0.0.1';
     $dbInfo['name'] = $uPOST['database_name'];
     $dbInfo['username'] = $uPOST['database_username'];
     $dbInfo['password'] = $uPOST['database_password'];
